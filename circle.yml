@@ -1,9 +1,9 @@
 machine:
-  node: 0.12.*
+  node: 0.12.3
 
 deployment:
   hub:
     branch: master
     commands:
       - node scripts/setVersion.js
-      - node npm-publish 
+      - node npm-publish
