@@ -2,6 +2,10 @@ machine:
   node:
     version: 0.12.3
 
+test:
+  pre:
+    - npm run build
+    
 deployment:
   hub:
     branch: master
