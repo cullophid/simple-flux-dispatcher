@@ -1,5 +1,6 @@
 machine:
-  node: 0.12.3
+  node:
+    version: 0.12.3
 
 deployment:
   hub:
