@@ -6,4 +6,4 @@ deployment:
     branch: master
     commands:
       - node scripts/setVersion.js
-      - node npm-publish
+      - npm run publish
