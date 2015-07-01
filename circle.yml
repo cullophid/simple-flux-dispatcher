@@ -5,10 +5,10 @@ machine:
 test:
   pre:
     - npm run build
-    
+
 deployment:
   hub:
     branch: master
     commands:
-      - node scripts/setVersion.js
+      - echo "//registry.npmjs.org/:_authToken=${NPM_AUTH_TOKEN}" >> .npmrc
       - npm publish
